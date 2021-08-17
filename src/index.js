@@ -1,8 +1,9 @@
 module.exports = function reverse(n) {
+    n = Math.abs(n);
     let arr = String(n);
-    let arr2 = arr.split(" ");
+    let arr2 = arr.split("");
     let arrRev = arr2.reverse();
-    let strRev = arrRev.join();
+    let strRev = arrRev.join("");
     let ans = Number(strRev);
     return ans;
 };
